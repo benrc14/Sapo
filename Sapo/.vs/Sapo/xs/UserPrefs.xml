@@ -1,4 +1,27 @@
 ﻿<Properties StartupConfiguration="{B507FA84-E2DA-44C6-B153-A1F549580470}|Default">
-  <MonoDevelop.Ide.ItemProperties.Sapo FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sapo/Controllers/HomeController.cs">
+    <Files>
+      <File FileName="Sapo/Controllers/HomeController.cs" Line="72" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Sapo" expanded="True">
+            <Node name="Sapo" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="HomeController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Sapo FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
