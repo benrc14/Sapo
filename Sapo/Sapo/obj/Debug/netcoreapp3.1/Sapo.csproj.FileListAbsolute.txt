@@ -1,0 +1,8 @@
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.csproj.AssemblyReference.cache
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.AssemblyInfoInputs.cache
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.AssemblyInfo.cs
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.csproj.CoreCompileInputs.cache
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.MvcApplicationPartsAssemblyInfo.cache
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.RazorAssemblyInfo.cache
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.RazorAssemblyInfo.cs
