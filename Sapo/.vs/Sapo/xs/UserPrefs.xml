@@ -1,22 +1,31 @@
 ﻿<Properties StartupConfiguration="{B507FA84-E2DA-44C6-B153-A1F549580470}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Sapo/appsettings.json">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Sapo/Startup.cs">
     <Files>
-      <File FileName="Sapo/Infrastructure/UrlExtensions.cs" Line="1" Column="1" />
-      <File FileName="Sapo/Views/Home/Index.cshtml" />
-      <File FileName="Sapo/Views/_ViewImports.cshtml" />
-      <File FileName="Sapo/Views/_ViewStart.cshtml" />
-      <File FileName="Sapo/Program.cs" />
-      <File FileName="Sapo/Startup.cs" Line="17" Column="2" />
+      <File FileName="Sapo/Startup.cs" Line="1" Column="1" />
       <File FileName="Sapo/Models/BookstoreContext.cs" Line="29" Column="76" />
       <File FileName="Sapo/appsettings.json" Line="1" Column="1" />
+      <File FileName="Sapo/Models/ISapoRepository.cs" Line="1" Column="1" />
+      <File FileName="Sapo/Models/EFSapoRepository.cs" Line="10" Column="16" />
+      <File FileName="Sapo/Views/Shared/_Layout.cshtml" />
+      <File FileName="Sapo/Controllers/HomeController.cs" Line="46" Column="33" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Sapo" expanded="True">
             <Node name="Sapo" expanded="True">
-              <Node name="Models" expanded="True" />
-              <Node name="appsettings.json" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Infrastructure" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Books.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="lib" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>

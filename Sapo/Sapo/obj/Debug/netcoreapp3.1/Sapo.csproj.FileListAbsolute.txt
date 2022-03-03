@@ -79,3 +79,7 @@
 /Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.dll
 /Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.pdb
 /Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Sapo.genruntimeconfig.cache
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Razor/Views/Purchase/Checkout.cshtml.g.cs
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Razor/Pages/PurchaseConfirmation.cshtml.g.cs
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/bin/Debug/netcoreapp3.1/libman.json
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Components/BasketSummary/Default.cshtml.g.cs

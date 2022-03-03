@@ -21,6 +21,8 @@ namespace Sapo.Models
 
         public virtual DbSet<Book> Books { get; set; }
 
+        public DbSet<Purchase> Purchases { get; set; }
+ 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

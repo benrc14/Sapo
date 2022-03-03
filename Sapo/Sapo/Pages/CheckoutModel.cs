@@ -15,9 +15,10 @@ namespace Sapo.Pages
         private ISapoRepository repo {get; set;}
 
         
-        public CheckoutModel (ISapoRepository temp)
+        public CheckoutModel (ISapoRepository temp, Basket b)
         {
             repo = temp;
+            basket = b;
         }
 
 
@@ -28,21 +29,29 @@ namespace Sapo.Pages
             {
 
             ReturnUrl = returnUrl ?? "/";
-            basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
+            //basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
         }
 
         public IActionResult OnPost(int bookId, string returnUrl)
         {
             Book b = repo.Books.FirstOrDefault(x => x.BookId == bookId);
 
-            basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
+            //basket = HttpContext.Session.GetJson<Basket>("basket") ?? new Basket();
             basket.AddItem(b, 1);
 
 
-            HttpContext.Session.SetJson("basket", basket);
+            //HttpContext.Session.SetJson("basket", basket);
 
             return RedirectToPage(new { ReturnUrl = returnUrl });
 
+        }
+
+
+        public IActionResult OnPostRemove(int bookid, string returnUrl)
+        {
+            basket.RemoveItem(basket.Items.First(x => x.Book.BookId == bookid).Book);
+
+            return RedirectToPage ( new {ReturnUrl = returnUrl});
         }
     }
 }
