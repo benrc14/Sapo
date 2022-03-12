@@ -42,8 +42,8 @@ namespace Sapo.Models
                     .IsUnique();
 
                 entity.Property(e => e.BookId)
-                    .HasColumnName("BookID")
-                    .ValueGeneratedNever();
+                    .HasColumnName("BookID");
+                    //.ValueGeneratedNever();
 
                 entity.Property(e => e.Author).IsRequired();
 
