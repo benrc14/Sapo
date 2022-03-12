@@ -63,41 +63,42 @@ using Sapo.Models;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 67 "/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/Pages/Admin/Books.razor"
-       
-    public ISapoRepository repo => Service;
-    public IEnumerable<Book> BookData { get; set; }
+#line 69 "/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/Pages/Admin/Books.razor"
+               
+            public ISapoRepository repo => Service;
+            public IEnumerable<Book> BookData { get; set; }
 
-    protected async override Task OnInitializedAsync()
-    {
-        await UpdateData();
-    }
+            protected async override Task OnInitializedAsync()
+            {
+                await UpdateData();
+            }
 
 
-    public async Task UpdateData()
-    {
-        BookData = await repo.Books.ToListAsync();
-        
+            public async Task UpdateData()
+            {
+                BookData = await repo.Books.ToListAsync();
+                
 
 #line default
 #line hidden
 #nullable disable
 #nullable restore
-#line 81 "/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/Pages/Admin/Books.razor"
-                                                                           
+#line 83 "/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/Pages/Admin/Books.razor"
+                                                                                       
 
-    }
+            }
 
-    public string GetDetailsUrl(long id) => $"/admin/books/details/{id}";
-    public string GetEditUrl(long id) => $"/admin/books/edit/{id}";
+            public string GetDetailsUrl(long id) => $"/admin/books/details/{id}";
+            public string GetEditUrl(long id) => $"/admin/books/edit/{id}";
 
-    public async Task RemoveBook(Book b)
-    {
-        repo.DeleteBook(b);
-        await UpdateData();
-    }
+            public async Task RemoveBook(Book b)
+            {
+                repo.DeleteBook(b);
+                await UpdateData();
+            }
 
 
+        
 
 #line default
 #line hidden

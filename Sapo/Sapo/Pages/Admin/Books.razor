@@ -2,7 +2,10 @@
 @page "/admin"
 @inherits OwningComponentBase<ISapoRepository>
 
-<table class="table table-sm table-striped table-bordered">
+
+    @*I added the w-auto so that the columns would be spaced better.>*@
+
+<table class="table table-sm table-striped table-bordered w-auto" >
 
     <thead>
         <tr>
@@ -18,34 +21,34 @@
             //List Books
             @foreach (Book b in BookData)
             {
-                    <tr>
-                        <td>@b.Isbn</td>
-                        <td>@b.Title</td>
-                        <td>@b.Author</td>
+                <tr>
+                    <td>@b.Isbn</td>
+                    <td>@b.Title</td>
+                    <td>@b.Author</td>
 
-                        <td>
-                            <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookId)">Details</NavLink>
-                        </td>
+                    <td>
+                        <NavLink class="btn btn-info btn-sm" href="@GetDetailsUrl(b.BookId)">Details</NavLink>
+                    </td>
 
-                        <td>
-                            <NavLink class="btn btn-info btn-sm" href="@GetEditUrl(b.BookId)">Edit</NavLink>
-                        </td>
+                    <td>
+                        <NavLink class="btn btn-info btn-sm" href="@GetEditUrl(b.BookId)">Edit</NavLink>
+                    </td>
 
-                        <td>
-                            <button class="btn btn-danger btn-sm" @onclick="@(x => RemoveBook(b))">Delete</button>
-                        </td>
+                    <td>
+                        <button class="btn btn-danger btn-sm" @onclick="@(x => RemoveBook(b))">Delete</button>
+                    </td>
 
 
 
-                    </tr>
+                </tr>
             }
         }
 
         else
         {
-                <tr>
-                    <td colspan="5" class="text-center">No Books</td>
-                </tr>
+            <tr>
+                <td colspan="5" class="text-center">No Books</td>
+            </tr>
         }
 
 
@@ -56,40 +59,39 @@
 
 </table>
 
-<NavLink class="btn btn-primary" href="/admin/books/create">Create</NavLink>
+        <NavLink class="btn btn-primary" href="/admin/books/create">Create</NavLink>
 
 
 
 
 
 
+        @code {
+            public ISapoRepository repo => Service;
+            public IEnumerable<Book> BookData { get; set; }
 
-@code {
-    public ISapoRepository repo => Service;
-    public IEnumerable<Book> BookData { get; set; }
-
-    protected async override Task OnInitializedAsync()
-    {
-        await UpdateData();
-    }
-
-
-    public async Task UpdateData()
-    {
-        BookData = await repo.Books.ToListAsync();
-        @*UncollectedPurchases = AllPurchases.Where(x => !x.PurchaseReceived);
-        CollectedPurchases = AllPurchases.Where(x => x.PurchaseReceived);*@
-
-    }
-
-    public string GetDetailsUrl(long id) => $"/admin/books/details/{id}";
-    public string GetEditUrl(long id) => $"/admin/books/edit/{id}";
-
-    public async Task RemoveBook(Book b)
-    {
-        repo.DeleteBook(b);
-        await UpdateData();
-    }
+            protected async override Task OnInitializedAsync()
+            {
+                await UpdateData();
+            }
 
 
-}
+            public async Task UpdateData()
+            {
+                BookData = await repo.Books.ToListAsync();
+                @*UncollectedPurchases = AllPurchases.Where(x => !x.PurchaseReceived);
+                    CollectedPurchases = AllPurchases.Where(x => x.PurchaseReceived);*@
+
+            }
+
+            public string GetDetailsUrl(long id) => $"/admin/books/details/{id}";
+            public string GetEditUrl(long id) => $"/admin/books/edit/{id}";
+
+            public async Task RemoveBook(Book b)
+            {
+                repo.DeleteBook(b);
+                await UpdateData();
+            }
+
+
+        }
