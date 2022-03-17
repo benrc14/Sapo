@@ -103,3 +103,9 @@
 /Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Details.razor.g.cs
 /Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/RazorDeclaration/Pages/Admin/Editor.razor.g.cs
 /Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Razor/Pages/Admin/Editor.razor.g.cs
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.Internal.dll
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Core.dll
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Identity.Stores.dll
+/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/obj/Debug/netcoreapp3.1/Razor/Views/Account/Login.cshtml.g.cs

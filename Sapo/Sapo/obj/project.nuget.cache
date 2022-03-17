@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "UYJX2m0iJq1CAzWFxSahCiz+jcfR6mdPTm68vzyWbLLZNV3zHi7eMN4Jf0mjpuQJjZZ8bBrZVhdmfuLa+SqyhA==",
+  "dgSpecHash": "nnfCMhPNmTFCsW+MqrfTUMf7NBU27bhRHdBBkRr80fznNW3pF7m8wtxklV/1K8+TobohjG7GJRguVT0cEKKfYA==",
   "success": true,
   "projectFilePath": "/Users/bcraythorne/Documents/GitHub/Sapo/Sapo/Sapo/Sapo.csproj",
   "expectedPackageFiles": [
+    "/Users/bcraythorne/.nuget/packages/microsoft.aspnetcore.cryptography.internal/3.1.22/microsoft.aspnetcore.cryptography.internal.3.1.22.nupkg.sha512",
+    "/Users/bcraythorne/.nuget/packages/microsoft.aspnetcore.cryptography.keyderivation/3.1.22/microsoft.aspnetcore.cryptography.keyderivation.3.1.22.nupkg.sha512",
+    "/Users/bcraythorne/.nuget/packages/microsoft.aspnetcore.identity.entityframeworkcore/3.1.22/microsoft.aspnetcore.identity.entityframeworkcore.3.1.22.nupkg.sha512",
     "/Users/bcraythorne/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/Users/bcraythorne/.nuget/packages/microsoft.bcl.hashcode/1.1.1/microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
     "/Users/bcraythorne/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
@@ -25,6 +28,8 @@
     "/Users/bcraythorne/.nuget/packages/microsoft.extensions.dependencyinjection/3.1.22/microsoft.extensions.dependencyinjection.3.1.22.nupkg.sha512",
     "/Users/bcraythorne/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/3.1.22/microsoft.extensions.dependencyinjection.abstractions.3.1.22.nupkg.sha512",
     "/Users/bcraythorne/.nuget/packages/microsoft.extensions.dependencymodel/3.1.6/microsoft.extensions.dependencymodel.3.1.6.nupkg.sha512",
+    "/Users/bcraythorne/.nuget/packages/microsoft.extensions.identity.core/3.1.22/microsoft.extensions.identity.core.3.1.22.nupkg.sha512",
+    "/Users/bcraythorne/.nuget/packages/microsoft.extensions.identity.stores/3.1.22/microsoft.extensions.identity.stores.3.1.22.nupkg.sha512",
     "/Users/bcraythorne/.nuget/packages/microsoft.extensions.logging/3.1.22/microsoft.extensions.logging.3.1.22.nupkg.sha512",
     "/Users/bcraythorne/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.22/microsoft.extensions.logging.abstractions.3.1.22.nupkg.sha512",
     "/Users/bcraythorne/.nuget/packages/microsoft.extensions.options/3.1.22/microsoft.extensions.options.3.1.22.nupkg.sha512",

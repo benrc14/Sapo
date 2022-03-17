@@ -11,6 +11,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Sapo.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 
 namespace Sapo
 {
@@ -30,6 +31,12 @@ public class Startup
         services.AddDbContext<BookstoreContext>(options =>
             options.UseSqlite(Configuration["ConnectionStrings:SapoDBConnection"])
             );
+
+            services.AddDbContext<AppIdentityDBContext>(options =>
+               options.UseSqlite(Configuration["ConnectionStrings:IdentityConnection"]));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                    .AddEntityFrameworkStores<AppIdentityDBContext>();
 
         services.AddScoped<ISapoRepository, EFSapoRepository>();
         services.AddScoped<IPurchaseRepository, EFPurchaseRepository>();
@@ -66,6 +73,8 @@ public class Startup
 
         app.UseRouting();
 
+        app.UseAuthentication();
+
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
@@ -95,6 +104,9 @@ public class Startup
 
 
         });
+
+
+        IdentitySeedData.EnsurePopulated(app);
     }
 }
 }
